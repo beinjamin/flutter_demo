@@ -1,15 +1,22 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(new MyApp());
+void main() => runApp(new MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: HomePage(),
+    );
+  }
 }
 
-class MyApp extends class  extends StatelessWidget {
+class HomePage extends StatelessWidget {
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
-    );
+    return Text("Je suis disponible ");
   }
 }
