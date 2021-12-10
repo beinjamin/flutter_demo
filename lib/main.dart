@@ -7,6 +7,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(primarySwatch: Colors.deepOrange),
       home: HomePage(),
     );
   }
@@ -17,6 +18,16 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text("Je suis disponible ");
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Accuiel '),
+      ),
+      body: Center(
+        child: Text(
+          "Page Principal",
+          style: TextStyle(color: Colors.blue, fontSize: 26),
+        ),
+      ),
+    );
   }
 }
