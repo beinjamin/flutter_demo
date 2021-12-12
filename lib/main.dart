@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(primarySwatch: Colors.deepOrange),
+      theme: ThemeData(primarySwatch: Colors.blue),
       home: HomePage(),
     );
   }
@@ -30,5 +30,22 @@ class HomePage extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+class MyDrawer extends StatelessWidget {
+  const MyDrawer({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Drawer(
+        child: ListView(
+      children: [
+        DrawerHeader(
+            child: CircleAvatar(
+          backgroundImage: AssetImage("images/test.png"),
+        ))
+      ],
+    ));
   }
 }
