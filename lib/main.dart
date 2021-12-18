@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/ui/pages/home.page.dart';
+import 'package:flutter_demo/ui/pages/meteo.page.dart';
 
 void main() => runApp(new MyApp());
 
@@ -10,10 +11,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       routes: {
         "/home": (context) => HomePage(),
-        "/meteo": (context) => HomePage(),
+        "/meteo": (context) => MeteoPage(),
       },
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: HomePage(),
+      initialRoute: "/home",
     );
   }
 }

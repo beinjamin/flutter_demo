@@ -9,11 +9,11 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       drawer: MyDrawer(),
       appBar: AppBar(
-        title: Text('Accuiell'),
+        title: Text('Home'),
       ),
       body: Center(
         child: Text(
-          "Page Principal",
+          "Home Page",
           style: Theme.of(context).textTheme.headline3,
         ),
       ),

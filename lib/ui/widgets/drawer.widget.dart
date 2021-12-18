@@ -15,7 +15,7 @@ class MyDrawer extends StatelessWidget {
               ),
               child: Center(
                 child: CircleAvatar(
-                  backgroundImage: AssetImage("images/logo.png"),
+                  //backgroundImage: AssetImage("images/logo.png"),
                   radius: 50,
                 ),
               )),
@@ -40,7 +40,7 @@ class MyDrawer extends StatelessWidget {
           ),
           ListTile(
             title: Text(
-              'MeteoPage',
+              'Meteo',
               style: TextStyle(fontSize: 22),
             ),
             leading: Icon(
@@ -51,7 +51,9 @@ class MyDrawer extends StatelessWidget {
               Icons.arrow_right,
               color: Colors.orange,
             ),
-            onTap: () {},
+            onTap: () {
+              Navigator.pushNamed(context, "/meteo");
+            },
           ),
           Divider(
             height: 2,
