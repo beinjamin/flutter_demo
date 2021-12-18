@@ -19,9 +19,9 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(),
+      drawer: MyDrawer(),
       appBar: AppBar(
-        title: Text('Accuiel '),
+        title: Text('Accuiell'),
       ),
       body: Center(
         child: Text(
@@ -39,13 +39,27 @@ class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-        child: ListView(
-      children: [
-        DrawerHeader(
-            child: CircleAvatar(
-          backgroundImage: AssetImage("images/logo.png"),
-        ))
-      ],
-    ));
+      child: ListView(
+        children: [
+          DrawerHeader(
+              decoration: BoxDecoration(
+                gradient:
+                    LinearGradient(colors: [Colors.white, Colors.deepOrange]),
+              ),
+              child: Center(
+                child: CircleAvatar(
+                  backgroundImage: AssetImage("images/logo.png"),
+                  radius: 50,
+                ),
+              )),
+          ListTile(
+            title: Text(
+              'Home',
+              style: TextStyle(fontSize: 45),
+            ),
+          )
+        ],
+      ),
+    );
   }
 }
