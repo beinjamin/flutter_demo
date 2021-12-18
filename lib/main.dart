@@ -67,6 +67,10 @@ class MyDrawer extends StatelessWidget {
             ),
             onTap: () {},
           ),
+          Divider(
+            height: 2,
+            color: Colors.deepOrange,
+          ),
           ListTile(
             title: Text(
               'MeteoPage',
@@ -82,9 +86,10 @@ class MyDrawer extends StatelessWidget {
             ),
             onTap: () {},
           ),
-
-          Divider()
-
+          Divider(
+            height: 2,
+            color: Colors.deepOrange,
+          ),
           ListTile(
             title: Text(
               'Gallery',
@@ -99,6 +104,10 @@ class MyDrawer extends StatelessWidget {
               color: Colors.orange,
             ),
             onTap: () {},
+          ),
+          Divider(
+            height: 2,
+            color: Colors.deepOrange,
           ),
         ],
       ),
