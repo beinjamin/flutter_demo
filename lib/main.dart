@@ -8,6 +8,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      routes: {
+        "/home": (context) => HomePage(),
+        "/meteo": (context) => HomePage(),
+      },
       theme: ThemeData(primarySwatch: Colors.blue),
       home: HomePage(),
     );
