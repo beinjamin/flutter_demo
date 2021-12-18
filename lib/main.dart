@@ -43,7 +43,7 @@ class MyDrawer extends StatelessWidget {
       children: [
         DrawerHeader(
             child: CircleAvatar(
-          backgroundImage: AssetImage("images/test.png"),
+          backgroundImage: AssetImage("images/logo.png"),
         ))
       ],
     ));
