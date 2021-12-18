@@ -65,7 +65,41 @@ class MyDrawer extends StatelessWidget {
               Icons.arrow_right,
               color: Colors.orange,
             ),
-          )
+            onTap: () {},
+          ),
+          ListTile(
+            title: Text(
+              'MeteoPage',
+              style: TextStyle(fontSize: 22),
+            ),
+            leading: Icon(
+              Icons.home,
+              color: Colors.orange,
+            ),
+            trailing: Icon(
+              Icons.arrow_right,
+              color: Colors.orange,
+            ),
+            onTap: () {},
+          ),
+
+          Divider()
+
+          ListTile(
+            title: Text(
+              'Gallery',
+              style: TextStyle(fontSize: 22),
+            ),
+            leading: Icon(
+              Icons.home,
+              color: Colors.orange,
+            ),
+            trailing: Icon(
+              Icons.arrow_right,
+              color: Colors.orange,
+            ),
+            onTap: () {},
+          ),
         ],
       ),
     );
