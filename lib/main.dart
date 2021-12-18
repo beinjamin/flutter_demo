@@ -55,7 +55,15 @@ class MyDrawer extends StatelessWidget {
           ListTile(
             title: Text(
               'Home',
-              style: TextStyle(fontSize: 45),
+              style: TextStyle(fontSize: 22),
+            ),
+            leading: Icon(
+              Icons.home,
+              color: Colors.orange,
+            ),
+            trailing: Icon(
+              Icons.arrow_right,
+              color: Colors.orange,
             ),
           )
         ],
