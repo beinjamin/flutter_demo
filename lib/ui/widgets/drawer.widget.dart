@@ -21,7 +21,7 @@ class MyDrawer extends StatelessWidget {
               )),
           ListTile(
             title: Text(
-              'Home',
+              'Counter',
               style: TextStyle(fontSize: 22),
             ),
             leading: Icon(
@@ -32,7 +32,10 @@ class MyDrawer extends StatelessWidget {
               Icons.arrow_right,
               color: Colors.orange,
             ),
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.pushNamed(context, "/counter");
+            },
           ),
           Divider(
             height: 2,
