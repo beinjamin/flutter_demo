@@ -15,9 +15,18 @@ class MyDrawer extends StatelessWidget {
                     LinearGradient(colors: [Colors.white, Colors.deepOrange]),
               ),
               child: Center(
-                child: CircleAvatar(
-                  //backgroundImage: AssetImage("images/logo.png"),
-                  radius: 50,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    CircleAvatar(
+                      backgroundImage: AssetImage("images/logo.png"),
+                      radius: 50,
+                    ),
+                    CircleAvatar(
+                      backgroundImage: AssetImage("images/profile.png"),
+                      radius: 50,
+                    ),
+                  ],
                 ),
               )),
           ...(GlobalParams.menus as List).map((item) {
