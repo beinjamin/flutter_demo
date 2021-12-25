@@ -11,12 +11,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        "/home": (context) => HomePage(),
+        "/": (context) => HomePage(),
         "/meteo": (context) => MeteoPage(),
         "/gallery": (context) => GalleryPage(),
+        "counter": (context)0>GalleryPage(),
       },
       theme: ThemeData(primarySwatch: Colors.blue),
-      initialRoute: "/home",
+      initialRoute: "/",
     );
   }
 }
