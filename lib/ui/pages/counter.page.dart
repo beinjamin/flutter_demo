@@ -10,7 +10,7 @@ class CounterPage extends StatelessWidget {
         title: Text('Counter'),
       ),
       body: Center(
-        child: Text('Counter'),
+        child: Text('Counter Value => $counter'),
       ),
     );
   }

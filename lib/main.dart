@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         "/": (context) => HomePage(),
         "/meteo": (context) => MeteoPage(),
         "/gallery": (context) => GalleryPage(),
-        "counter": (context)0>GalleryPage(),
+        "counter": (context) => GalleryPage(),
       },
       theme: ThemeData(primarySwatch: Colors.blue),
       initialRoute: "/",
