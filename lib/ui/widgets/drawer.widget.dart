@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/config/global.params.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({Key? key}) : super(key: key);
@@ -19,72 +20,23 @@ class MyDrawer extends StatelessWidget {
                   radius: 50,
                 ),
               )),
-          ListTile(
-            title: Text(
-              'Counter',
-              style: TextStyle(fontSize: 22),
-            ),
-            leading: Icon(
-              Icons.home,
-              color: Colors.orange,
-            ),
-            trailing: Icon(
-              Icons.arrow_right,
-              color: Colors.orange,
-            ),
-            onTap: () {
-              Navigator.of(context).pop();
-              Navigator.pushNamed(context, "/counter");
-            },
-          ),
-          Divider(
-            height: 2,
-            color: Colors.deepOrange,
-          ),
-          ListTile(
-            title: Text(
-              'Meteo',
-              style: TextStyle(fontSize: 22),
-            ),
-            leading: Icon(
-              Icons.home,
-              color: Colors.orange,
-            ),
-            trailing: Icon(
-              Icons.arrow_right,
-              color: Colors.orange,
-            ),
-            onTap: () {
-              Navigator.of(context).pop();
-              Navigator.pushNamed(context, "/meteo");
-            },
-          ),
-          Divider(
-            height: 2,
-            color: Colors.deepOrange,
-          ),
-          ListTile(
-            title: Text(
-              'Gallery',
-              style: TextStyle(fontSize: 22),
-            ),
-            leading: Icon(
-              Icons.home,
-              color: Colors.orange,
-            ),
-            trailing: Icon(
-              Icons.arrow_right,
-              color: Colors.orange,
-            ),
-            onTap: () {
-              Navigator.of(context).pop();
-              Navigator.pushNamed(context, "/gallery");
-            },
-          ),
-          Divider(
-            height: 2,
-            color: Colors.deepOrange,
-          ),
+          ...(GlobalParams.menus as List).map((item) {
+            return ListTile(
+              title: Text(
+                '${item['title']}',
+                style: TextStyle(fontSize: 22),
+              ),
+              leading: Icon(Icons.map),
+              trailing: Icon(
+                Icons.arrow_right,
+                color: Colors.orange,
+              ),
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.pushNamed(context, "${item['route']}");
+              },
+            );
+          })
         ],
       ),
     );
