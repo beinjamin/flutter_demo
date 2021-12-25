@@ -9,7 +9,7 @@ class CounterPage extends StatefulWidget {
 }
 
 class _CounterPageState extends State<CounterPage> {
-  int counter = 50;
+  int counter = 0;
 
   @override
   Widget build(BuildContext context) {

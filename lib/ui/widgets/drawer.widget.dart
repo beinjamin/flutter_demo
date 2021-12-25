@@ -26,7 +26,7 @@ class MyDrawer extends StatelessWidget {
                 '${item['title']}',
                 style: TextStyle(fontSize: 22),
               ),
-              leading: Icon(Icons.map),
+              leading: item['icon'],
               trailing: Icon(
                 Icons.arrow_right,
                 color: Colors.orange,
