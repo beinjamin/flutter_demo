@@ -30,13 +30,13 @@ class _CounterPageState extends State<CounterPage> {
             child: Icon(Icons.remove),
             onPressed: () {
               setState(() {
-                ++counter;
+                --counter;
               });
               print(counter);
             },
           ),
           SizedBox(
-            width: 8,
+            width: 250,
           ),
           FloatingActionButton(
             child: Icon(Icons.add),
