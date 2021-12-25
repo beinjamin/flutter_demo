@@ -52,6 +52,7 @@ class MyDrawer extends StatelessWidget {
               color: Colors.orange,
             ),
             onTap: () {
+              Navigator.of(context).pop();
               Navigator.pushNamed(context, "/meteo");
             },
           ),
@@ -72,7 +73,10 @@ class MyDrawer extends StatelessWidget {
               Icons.arrow_right,
               color: Colors.orange,
             ),
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.pushNamed(context, "/gallery");
+            },
           ),
           Divider(
             height: 2,

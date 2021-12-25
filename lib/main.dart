@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/ui/pages/gallery.page.dart';
 import 'package:flutter_demo/ui/pages/home.page.dart';
 import 'package:flutter_demo/ui/pages/meteo.page.dart';
 
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "/home": (context) => HomePage(),
         "/meteo": (context) => MeteoPage(),
+        "/gallery": (context) => GalleryPage(),
       },
       theme: ThemeData(primarySwatch: Colors.blue),
       initialRoute: "/home",
