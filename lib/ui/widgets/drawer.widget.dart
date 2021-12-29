@@ -19,11 +19,11 @@ class MyDrawer extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     CircleAvatar(
-                      backgroundImage: AssetImage("images/logo.png"),
+                      //backgroundImage: AssetImage("images/logo.png"),
                       radius: 50,
                     ),
                     CircleAvatar(
-                      backgroundImage: AssetImage("images/profile.png"),
+                      //backgroundImage: AssetImage("images/profile.png"),
                       radius: 50,
                     ),
                   ],
